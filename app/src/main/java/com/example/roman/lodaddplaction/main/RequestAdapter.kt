@@ -36,10 +36,10 @@ class RequestAdapter(
             // Чтобы аватар был круглым
             ivAvatar.clipToOutline = true
 
-            cg_tags.removeAllViews()
+            cgTags.removeAllViews()
 
             list[position].tags?.forEach {
-                val chip = Chip(cg_tags.context).apply {
+                val chip = Chip(cgTags.context).apply {
                     @RequiresApi(Build.VERSION_CODES.M)
                     when (it.type) {
                         TagType.MONEY ->
@@ -51,7 +51,7 @@ class RequestAdapter(
                     text = it.body
                 }
 
-                cg_tags.addView(chip)
+                cgTags.addView(chip)
             }
         }
 
@@ -72,7 +72,7 @@ class RequestAdapter(
 
         val ivAvatar = itemView.iv_avatar
         val tvRequestTilte = itemView.tv_request_title
-        val cg_tags = itemView.cg_tags
+        val cgTags = itemView.cg_tags
         val container = itemView.container_request
     }
 }

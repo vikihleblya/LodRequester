@@ -5,6 +5,7 @@ import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.example.roman.lodaddplaction.R
+import kotlinx.android.synthetic.main.step1_fragment.*
 
 class CreateRequestActivity : AppCompatActivity() {
 
@@ -60,12 +61,33 @@ class CreateRequestActivity : AppCompatActivity() {
     private fun handleNextButton() {
         when (currentStep) {
             1 -> {
-                currentStep = 2
-                setCurrentStepFragment()
+                if (check()) {
+                    currentStep = 2
+                    setCurrentStepFragment()
+                } else {
+                    showErrors()
+                }
             }
             2 -> {
                 createRequest()
             }
+        }
+    }
+
+    private fun check(): Boolean {
+        if (!et_name_of_request.text!!.isBlank()
+                and !et_desc_of_request.text!!.isBlank()) {
+            return true
+        }
+        return false
+    }
+
+    private fun showErrors() {
+        if (et_name_of_request.text!!.isEmpty()) {
+            et_name_of_request.error = getString(R.string.error_no_name)
+        }
+        if (et_desc_of_request.text!!.isEmpty()) {
+            et_desc_of_request.error = getString(R.string.error_no_description)
         }
     }
 

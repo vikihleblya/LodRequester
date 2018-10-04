@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.step1_fragment.*
 
 class FragmentCreateStep1 : Fragment() {
 
-    private val dormitories = arrayListOf(Dormitory.GORNYAK1.title, Dormitory.GORNYAK2.title,
+    private val dormitories = listOf(Dormitory.GORNYAK1.title, Dormitory.GORNYAK2.title,
             Dormitory.M1.title, Dormitory.M2.title, Dormitory.M3.title,
             Dormitory.M4.title, Dormitory.DSG.title)
 
@@ -23,7 +23,7 @@ class FragmentCreateStep1 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val spinnerAdapter = ArrayAdapter<String>(context!!,
+        val spinnerAdapter = ArrayAdapter<String>(context,
                 android.R.layout.simple_spinner_dropdown_item, dormitories)
 
         spinner_dormitory.apply {

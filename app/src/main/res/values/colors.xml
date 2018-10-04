@@ -12,4 +12,5 @@
     <color name="colorChipText">#343434</color>
     <color name="colorMoneyChipText">@color/colorAccent</color>
     <color name="colorTitle">#000</color>
+    <color name="colorBottomAppBarBackground">#ffffff</color>
 </resources>

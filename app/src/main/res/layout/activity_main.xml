@@ -70,9 +70,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:backgroundTint="@android:color/white"
         app:fabAlignmentMode="center"
-        app:fabCradleMargin="-8dp"
+        app:fabCradleMargin="0dp"
         app:hideOnScroll="true"
         app:navigationIcon="@drawable/ic_settings_24dp" />
 

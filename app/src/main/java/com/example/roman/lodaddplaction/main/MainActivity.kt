@@ -21,10 +21,12 @@ class MainActivity : AppCompatActivity() {
         setSupportActionBar(bottom_app_bar)
 
         fab.setOnClickListener {
-            Intent(applicationContext, CreateRequestActivity::class.java).apply {
-                applicationContext.startActivity(this)
+            Intent(baseContext, CreateRequestActivity::class.java).apply {
+                baseContext.startActivity(this)
             }
         }
+
+        bottom_app_bar.background = getDrawable(R.drawable.bottom_app_bar_background)
     }
 
     override fun onResume() {

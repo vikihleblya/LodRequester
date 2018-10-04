@@ -9,4 +9,6 @@
     <string name="next">Следующий</string>
     <string name="tags_via_space_hint">Введите теги через пробел</string>
     <string name="value_hint">Введите стоимость</string>
+    <string name="error_no_name">Введите название</string>
+    <string name="error_no_description">Введите описание</string>
 </resources>
