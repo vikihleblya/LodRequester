@@ -1,9 +1,9 @@
-package com.example.roman.lodaddplaction.models
+package com.example.roman.lodaddplaction
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.bumptech.glide.Glide
-import com.example.roman.lodaddplaction.R
+import com.example.roman.lodaddplaction.models.RequestModel
 import kotlinx.android.synthetic.main.activity_request_details.*
 import kotlinx.android.synthetic.main.item_request.*
 

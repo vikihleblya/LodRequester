@@ -8,7 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.example.roman.lodaddplaction.R
-import com.example.roman.lodaddplaction.models.RequestDetailsActivity
+import com.example.roman.lodaddplaction.RequestDetailsActivity
 import com.example.roman.lodaddplaction.models.RequestModel
 import kotlinx.android.synthetic.main.item_request.view.*
 
