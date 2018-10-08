@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">myrecycle</string>
+    <string name="input_name_application">Введите название заявки</string>
+    <string name="input_desc_application">Введите описание заявки</string>
+    <string name="input_tags_application">Введите теги через запятую</string>
+    <string name="input_price_application">Введите стоимость работы</string>
+    <string name="list_item_description">Описание заявки</string>
+    <string name="list_item_tag">Тэг</string>
+    <string name="search_searchview">Поиск...</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_get_request_step_two">GetRequestStepTwo</string>
+    <string name="toolbar_next">Next</string>
+    <string name="toolbar_previous">Previous</string>
+    <string name="request_step_1">Новая заявка. Шаг 1/2</string>
+    <string name="request_step_2">Новая заявка. Шаг 2/2</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_list">list</string>
+</resources>
