@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dormitory_array">
+        <item>Горняк</item>
+        <item>Металлург</item>
+        <item>Дом-коммуна</item>
+    </string-array>
+</resources>

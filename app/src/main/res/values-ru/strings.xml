@@ -1,4 +1,23 @@
 <resources>
     <string name="app_name">аппликация</string>
     <string name="hello_world">Дарова, бандиты</string>
+    <string name="input_name_application">Введите название заявки</string>
+    <string name="input_desc_application">Введите описание заявки</string>
+    <string name="input_tags_application">Введите теги через запятую</string>
+    <string name="input_price_application">Введите стоимость работы</string>
+    <string name="list_item_description">Описание заявки</string>
+    <string name="list_item_tag">Тэг</string>
+    <string name="search_searchview">Поиск</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="title_activity_get_request_step_two">GetRequestStepTwo</string>
+    <string name="toolbar_next">Далее</string>
+    <string name="toolbar_previous">Назад</string>
+    <string name="request_step_1">Новая заявка. Шаг 1/2</string>
+    <string name="request_step_2">Новая заявка. Шаг 2/2</string>
+    <string name="action_settings">Настройки</string>
+    <string name="action_list">Список</string>
+    <string name="search_for_requests">Поиск по заявкам</string>
+    <string name="hint_login">Введите логин</string>
+    <string name="password_hint">Введите пароль</string>
+    <string name = "login"> Войти </string>
 </resources>

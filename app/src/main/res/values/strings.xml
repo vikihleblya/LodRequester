@@ -2,4 +2,22 @@
     <string name="app_name">LodAddplaction</string>
     <string name="hello_world">Hello, mobsters %1.d</string>
     <string name="search_for_requests">Search for requests</string>
+    <string name="hint_login">Enter yout login</string>
+    <string name="password_hint">Enter your password</string>
+    <string name="input_name_application">Enter the name of the application</string>
+    <string name="input_desc_application">Enter a description of the application</string>
+    <string name="input_tags_application">Enter tags separated by commas</string>
+    <string name="input_price_application">Enter the cost of work</string>
+    <string name="list_item_description">The description of the application</string>
+    <string name="list_item_tag">Tag</string>
+    <string name="search_searchview">Find</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_get_request_step_two">GetRequestStepTwo</string>
+    <string name="toolbar_next">Next</string>
+    <string name="toolbar_previous">Previous</string>
+    <string name="request_step_1">New application. Step 1/2</string>
+    <string name="request_step_2">New application. Step 2/2</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_list">list</string>
+    <string name = "login"> Login</string>
 </resources>

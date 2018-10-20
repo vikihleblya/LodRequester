@@ -1,61 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraint_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/colorMainWhite">
 
-    <android.support.constraint.ConstraintLayout
-        android:id="@+id/cl_search"
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/search_background"
-        android:elevation="4dp"
-        android:layout_margin="32dp">
+        android:layout_height="match_parent">
 
 
-        <EditText
-            android:id="@+id/et_searchField"
+        <SearchView
+            android:id="@+id/searchView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/search_for_requests"
-            android:inputType="text"
-            android:padding="8dp"
-            android:background="@color/colorTransparent"
-            android:paddingStart="40dp"
-            tools:layout_editor_absoluteX="32dp" />
-
-        <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:layout_marginBottom="8dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_search"
-            android:tint="@color/colorAccent"
-            app:layout_constraintBottom_toBottomOf="@+id/et_searchField"
-            app:layout_constraintStart_toStartOf="@+id/et_searchField"
-            app:layout_constraintTop_toTopOf="@+id/et_searchField" />
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shadow"
+            android:clickable="true"
+            android:clipToPadding="true"
+            android:elevation="5dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:iconifiedByDefault="false"
+            android:queryBackground="@android:color/transparent"
+            android:queryHint="@string/search_searchview"
+            android:searchIcon="@drawable/ic_search_black_24dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
 
-    </android.support.constraint.ConstraintLayout>
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            android:background="@color/colorMainWhite"
+            android:elevation="4dp"
+            />
+
+        <android.support.design.bottomappbar.BottomAppBar
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="bottom"
+            android:backgroundTint="@color/colorMainWhite"
+            app:backgroundTint="@color/colorTitle"
+            app:fabAlignmentMode="center"
+            app:hideOnScroll="true"
+            android:elevation="90dp"/>
 
 
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="5dp"
+            android:src="@drawable/ic_add_white_24dp"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal"
+            app:layout_anchor="@id/app_bar" />
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/rv_requests"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cl_search"
-        app:layout_constraintVertical_bias="0.0" />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_requests"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
 </android.support.constraint.ConstraintLayout>
+
+

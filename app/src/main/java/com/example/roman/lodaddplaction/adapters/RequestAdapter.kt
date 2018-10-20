@@ -8,20 +8,21 @@ import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.example.roman.lodaddplaction.R
-import com.example.roman.lodaddplaction.models.RequestDetailsActivity
+import com.example.roman.lodaddplaction.RequestDetailsActivity
 import com.example.roman.lodaddplaction.models.RequestModel
 import kotlinx.android.synthetic.main.item_request.view.*
 
-class RequestAdapter(
-        private val context: Context, private val list: List<RequestModel>
-): RecyclerView.Adapter<RequestAdapter.ViewHolder>(){
+class RequestAdapter(private val context: Context,
+                     private val list: List<RequestModel>):
+                        RecyclerView.Adapter<RequestAdapter.ViewHolder>()
+{
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
             ViewHolder(LayoutInflater.from(context)
                 .inflate(R.layout.item_request, parent, false))
 
     override fun getItemCount() = list.size
-//
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.tvRequestTilte.text = list[position].title
         holder.tvTags.text = list[position].tags.joinToString(", ")
@@ -33,9 +34,7 @@ class RequestAdapter(
                 putExtra("data", list[position])
                 context.startActivity(this)
             }
-
         }
-
     }
 
 
