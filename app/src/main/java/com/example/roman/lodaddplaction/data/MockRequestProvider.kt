@@ -7,7 +7,7 @@ class MockRequestProvider : RequestProvider {
     override fun getRequests(): List<RequestModel> {
         return listOf(
                 RequestModel("Help me with printer",
-                        listOf("IT, Принтеры"),
+                        listOf("IT", "Принтеры"),
                         "Ничего не рОБОТОЕТ",
                         UserModel("Макаров",
                         "http://old.misis.ru/portals/0/Kaf_matem/Макаров%20П.В.jpg")),
