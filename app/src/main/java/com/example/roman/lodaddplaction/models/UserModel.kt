@@ -4,5 +4,5 @@ import java.io.Serializable
 
 data class UserModel(
      val name: String,
-     val avaUrl: String
+     val avaUrl: String?
 ) : Serializable

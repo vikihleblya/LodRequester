@@ -1,6 +1,8 @@
 package com.example.roman.lodaddplaction.network
 
 import com.bumptech.glide.load.HttpException
+import com.example.roman.lodaddplaction.models.dto.LoginRequestDto
+import com.example.roman.lodaddplaction.models.dto.LoginResponseDto
 import io.reactivex.Single
 import java.util.concurrent.TimeUnit
 

@@ -10,7 +10,7 @@
     android:background="@color/colorMainWhite">
 
     <EditText
-        android:id="@+id/name"
+        android:id="@+id/et_name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -18,12 +18,14 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/input_name_application"
+        android:inputType="text"
+        android:singleLine="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/goToStepTwo" />
 
     <EditText
-        android:id="@+id/description"
+        android:id="@+id/et_description"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -31,9 +33,10 @@
         android:layout_marginEnd="8dp"
         android:ems="10"
         android:hint="@string/input_desc_application"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/name" />
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
 
     <ImageButton
         android:id="@+id/goToStepTwo"
@@ -63,13 +66,13 @@
         android:text="@string/request_step_1"
         android:textColor="@color/colorTitle"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/name"
+        app:layout_constraintBottom_toTopOf="@+id/et_name"
         app:layout_constraintEnd_toStartOf="@+id/goToStepTwo"
         app:layout_constraintStart_toEndOf="@+id/goToMainActivity"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinner_dormitory"
         android:layout_width="0dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
@@ -77,6 +80,6 @@
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/description" />
+        app:layout_constraintTop_toBottomOf="@+id/et_description" />
 
 </android.support.constraint.ConstraintLayout>

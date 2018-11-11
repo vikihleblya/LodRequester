@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">аппликация</string>
+    <string name="app_name">LoD Приложение</string>
     <string name="hello_world">Дарова, бандиты</string>
     <string name="input_name_application">Введите название заявки</string>
     <string name="input_desc_application">Введите описание заявки</string>
@@ -15,9 +15,14 @@
     <string name="request_step_1">Новая заявка. Шаг 1/2</string>
     <string name="request_step_2">Новая заявка. Шаг 2/2</string>
     <string name="action_settings">Настройки</string>
-    <string name="action_list">Список</string>
+    <string name="sort_by_price">Сортировать по стоимости</string>
+    <string name="sort_by_distance">Сортировать по расстоянию</string>
     <string name="search_for_requests">Поиск по заявкам</string>
     <string name="hint_login">Введите логин</string>
     <string name="password_hint">Введите пароль</string>
     <string name = "login"> Войти </string>
+    <string name="price">Цена</string>
+    <string name="name">Имя: </string>
+    <string name="priceis">Стоимость: </string>
+    <string name="dormitory">Общежитие: </string>
 </resources>

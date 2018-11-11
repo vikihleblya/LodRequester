@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/constraint_layout"
@@ -43,35 +42,52 @@
             app:layout_constraintVertical_bias="0.2" />
 
         <View
-            android:id="@+id/view"
+            android:id="@+id/shadow"
+            android:background="@drawable/top_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            app:layout_anchor="@id/bottom_bar" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/bottom_bar"
+            android:layout_gravity="bottom"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:layout_gravity="bottom"
-            android:background="@color/colorMainWhite"
-            android:elevation="4dp"
-            />
+            android:background="@color/colorMainWhite">
 
-        <android.support.design.bottomappbar.BottomAppBar
-            android:id="@+id/app_bar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:layout_gravity="bottom"
-            android:backgroundTint="@color/colorMainWhite"
-            app:backgroundTint="@color/colorTitle"
-            app:fabAlignmentMode="center"
-            app:hideOnScroll="true"
-            android:elevation="90dp"/>
+            <ImageButton
+                android:id="@+id/settings"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:src="@drawable/ic_settings_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <ImageButton
+                android:id="@+id/sortByLocation"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                android:src="@drawable/ic_location24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:elevation="5dp"
-            android:src="@drawable/ic_add_white_24dp"
-            app:backgroundTint="@color/colorAccent"
-            app:fabSize="normal"
-            app:layout_anchor="@id/app_bar" />
+            <ImageButton
+                android:id="@+id/sortByPrice"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="48dp"
+                android:background="@null"
+                android:src="@drawable/ic_monetization_on_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/sortByLocation"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
 
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rv_requests"
@@ -80,11 +96,25 @@
             android:layout_marginStart="8dp"
             android:layout_marginTop="64dp"
             android:layout_marginEnd="8dp"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="?attr/actionBarSize"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/searchView" />
+            app:layout_constraintTop_toBottomOf="@+id/searchView"
+            tools:itemCount="26" />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            android:elevation="5dp"
+            android:src="@drawable/ic_add_white_24dp"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal"
+            app:layout_anchor="@id/bottom_bar"
+            app:layout_anchorGravity="center" />
 
 
     </android.support.design.widget.CoordinatorLayout>

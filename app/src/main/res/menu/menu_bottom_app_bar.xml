@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/app_bar_search"
+        android:id="@+id/sort_by_price"
         android:icon="@drawable/ic_view_list_color_accent_24dp"
-        android:title="@string/action_list"
+        android:title="@string/sort_by_price"
+        android:onClick="sortByPrice"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/sort_by_distance"
+        android:icon="@drawable/ic_view_list_color_accent_24dp"
+        android:title="@string/sort_by_distance"
+        android:onClick="sortByDistance"
         app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/app_bar_settings"
         android:icon="@drawable/ic_settings_color_accent_24dp"
         android:title="@string/action_settings"
-        app:showAsAction="ifRoom"
+        app:showAsAction="always"
         />
 </menu>
